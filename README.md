@@ -1,4 +1,4 @@
-# JS Test Task #2: Queue () [![Build Status](https://travis-ci.org/avkrash/jsqueue.svg?branch=master)](https://travis-ci.org/avkrash/jsqueue)
+# JS Test Task #2: Queue (avkrash-queue) [![Build Status](https://travis-ci.org/avkrash/jsqueue.svg?branch=master)](https://travis-ci.org/avkrash/jsqueue)
 
 Queue is dynamical data structure add-on to JS that allows you to create queues and work with them.
 
@@ -6,7 +6,7 @@ Queue is dynamical data structure add-on to JS that allows you to create queues 
 
 ## Initializing the list
 ```javascript
-const Queue = require('');
+const Queue = require('avkrash-queue');
 var queue = new Queue();
 ```
 ## Adding elements to the queue
@@ -33,7 +33,7 @@ queue.isEmprty(); //returns 'true'
 # Getting started
 ## Install
 ```
-npm install
+npm install avkrash-queue
 ```
 
 ## Running tests

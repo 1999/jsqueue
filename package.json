@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "avkrash-queue",
   "version": "0.1.0",
   "description": "Dynamical data structure - Queue",
   "main": "queue.js",
