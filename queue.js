@@ -8,8 +8,8 @@
  *                          == this.first for single element queue
  */
 function Queue() {
-  this.first = null;
-  this.last = null;
+    this.first = null;
+    this.last = null;
 }
 
 /**
@@ -21,10 +21,10 @@ function Queue() {
  * @returns {boolean} 'false' - if queue is not empty
  */
 Queue.prototype.isEmpty = () => {
-  if (!this.first) {
-    return true;
-  }
-  return false;
+    if (!this.first) {
+        return true;
+    }
+    return false;
 };
 
 /**
@@ -36,10 +36,10 @@ Queue.prototype.isEmpty = () => {
  * @returns {RangeError} 'Queue is empty' - if queue is empty
  */
 Queue.prototype.peek = () => {
-  if (!this.first) {
-    throw new RangeError('Queue is empty');
-  }
-  return this.first.value;
+    if (!this.first) {
+        throw new RangeError('Queue is empty');
+    }
+    return this.first.value;
 };
 
 /**
@@ -51,18 +51,18 @@ Queue.prototype.peek = () => {
  * @returns {number} '0' - when element added
  */
 Queue.prototype.enqueue = (addValue) => {
-  const element = {
-    value: addValue,
-    next: null,
-  };
-  if (!this.first) {
-    this.first = element;
-    this.last = this.first;
-  } else {
-    this.last.next = element;
-    this.last = this.last.next;
-  }
-  return 0;
+    const element = {
+        value: addValue,
+        next: null,
+    };
+    if (!this.first) {
+        this.first = element;
+        this.last = this.first;
+    } else {
+        this.last.next = element;
+        this.last = this.last.next;
+    }
+    return 0;
 };
 
 /**
@@ -74,17 +74,17 @@ Queue.prototype.enqueue = (addValue) => {
  * @returns {RangeError} 'Queue is empty' - if queue is empty
  */
 Queue.prototype.dequeue = () => {
-  if (!this.first) {
-    throw new RangeError('Queue is empty');
-  }
-  const value = this.first.value;
-  if (this.first.next) {
-    this.first = this.first.next;
-  } else {
-    this.first = null;
-    this.last = null;
-  }
-  return value;
+    if (!this.first) {
+        throw new RangeError('Queue is empty');
+    }
+    const value = this.first.value;
+    if (this.first.next) {
+        this.first = this.first.next;
+    } else {
+        this.first = null;
+        this.last = null;
+    }
+    return value;
 };
 
 /**

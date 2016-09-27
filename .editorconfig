@@ -1,0 +1,19 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+trim_trailing_whitespace = true
+
+[{Makefile,debian/rules}]
+indent_style = tab
+
+[{package.json,bower.json,.tanker,.borschik}]
+indent_style = space
+indent_size = 2
+
+[i18n/*.json]
+insert_final_newline = false
