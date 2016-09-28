@@ -1,3 +1,5 @@
+const assert = require('assert');
+
 /**
  * @constructor Queue
  * @summary Queue class constructor. Creates one empty queue object.
@@ -36,9 +38,7 @@ Queue.prototype.isEmpty = () => {
  * @returns {RangeError} 'Queue is empty' - if queue is empty
  */
 Queue.prototype.peek = () => {
-    if (!this.first) {
-        throw new RangeError('Queue is empty');
-    }
+    assert(this.first, 'Queue is empty');
     return this.first.value;
 };
 
