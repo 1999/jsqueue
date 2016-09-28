@@ -21,10 +21,7 @@ function Queue() {
  * @returns {boolean} 'false' - if queue is not empty
  */
 Queue.prototype.isEmpty = () => {
-    if (!this.first) {
-        return true;
-    }
-    return false;
+    return !this.first;
 };
 
 /**
