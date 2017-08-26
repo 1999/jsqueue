@@ -1,5 +1,7 @@
 # JS Test Task #2: Queue (avkrash-queue) [![Build Status](https://travis-ci.org/avkrash/jsqueue.svg?branch=master)](https://travis-ci.org/avkrash/jsqueue)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/1999/jsqueue.svg)](https://greenkeeper.io/)
+
 Queue is dynamical data structure add-on to JS that allows you to create queues and work with them.
 
 # Module description
